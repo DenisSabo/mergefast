@@ -1,12 +1,12 @@
 import {
   Card,
-  Page,
-  Layout,
-  TextContainer,
-  Image,
+  // Page,
+  // Layout,
+  // TextContainer,
+  // Image,
   Stack,
-  Link,
-  Heading,
+  // Link,
+  // Heading,
   ResourceList,
   TextField,
   TextStyle,
@@ -21,19 +21,23 @@ import {
 } from "@shopify/polaris";
 import React, { useState, useCallback, useRef, useEffect } from "react";
 import gql from "graphql-tag";
+
+// https://www.apollographql.com/docs/react/migrating/apollo-client-3-migration/
 import { useMutation, useQuery } from "@apollo/client";
 import { Query } from "@apollo/client/react/components";
-// import { Query } from 'react-apollo'; // TODO maybe @apollo/client has the Query dependency...
+// import { Query } from 'react-apollo'; // deprecated Apollo dependency!!!
+
 import parse from "html-react-parser";
 // TODO very old, unmaintained dependency. Maybe replace it with something else.
+// TODO doesn't seem to work...
 import store from "store-js";
 
 import { RiskMajor, CircleTickOutlineMinor } from "@shopify/polaris-icons";
 import _ from "lodash";
 
-import trophyImgUrl from "../assets/home-trophy.png";
+// import trophyImgUrl from "../assets/home-trophy.png";
 
-import { ProductsCard } from "./ProductsCard";
+// import { ProductsCard } from "./ProductsCard";
 
 /**
 export function HomePage() {
